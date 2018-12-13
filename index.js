@@ -3,7 +3,7 @@ const http = require('http');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const app = express();
-const router = require('./router');
+const router = require('./routes/router');
 const mongoose = require('mongoose');
 //DB setup
 mongoose.connect('mongodb://localhost:27017/auth', { useNewUrlParser: true });
